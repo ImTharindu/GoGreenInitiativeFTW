@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Total Carbon Foot Print = <span id="totalFootprint">0</span> gCO2-e</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Emission Sources</th>
+                    <th>Quantity</th>
+                    <th>Emission factors</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>diesel</td>
+                    <td><input type="number" id="dieselQuantity" class="quantity-input"></td>
+                    <td>2738.5 gCO2-e/L</td>
+                </tr>
+                <tr>
+                    <td>sawdust</td>
+                    <td><input type="number" id="sawdustQuantity" class="quantity-input"></td>
+                    <td>12.81 gCO2-e/kg</td>
+                </tr>
+                <tr>
+                    <td>electricity</td>
+                    <td><input type="number" id="electricityQuantity" class="quantity-input"></td>
+                    <td>436.8 gCO2-e/kWh</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>You would need to plant <span id="treesNeeded">0</span> trees to eliminate your carbon footprint</h2>
+    </div>
+
+
+    <footer>
+        <a> Find Me on</a>
+        <div class="social-media">
+            <a href="https://web.facebook.com/aFriendlyAlien" style="color: white;">  <i class="fab fa-facebook" ></i></a>
+                
+            
+            <a href="https://x.com/M_Tardi_" style="color: white;"><i class="fab fa-twitter"></i></a>
+                
+            
+            <a href="https://www.linkedin.com/in/tharindun-tardi123/" style="color: white;"><i class="fab fa-linkedin"></i></a>
+                
+            
+        </div>
+        <p>&copy; <span id="currentYear"></span>  All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
